@@ -1,0 +1,19 @@
+Question 1
+
+
+create table persons(personid int primary key, last_name varchar(23), first_name varchar(23), age int);
+
+
+insert into persons values(1, "Gupta","Das", 29);
+insert into persons values(2, "Sen","Noyonika",25);
+insert into persons values(3, "Karthika","Rosha",26);
+insert into persons values(4, "Maheshwaram","Keerthana",27);
+insert into persons values(5, "Maria","Jesin", 25);
+
+
+create table orders1(order_id int primary key, order_number int, person_id int not null,foreign key(person_id) references persons(personid));
+insert into orders1 values (100, 1000,1);
+insert into orders1 values(101, 1001, 2);
+insert into orders1 values(102, 1002, 3);
+insert into orders1 values(103, 1003, 4);
+insert into orders1 values(104, 1004, 5);

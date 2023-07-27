@@ -25,3 +25,4 @@ insert into salesman(name,city,commission) values ("Lauson Hen","San Jose",0.12)
 9. select * from salesman order by commission;
 
 10.select * from salesman where city != "San Jose";
+
